@@ -1,0 +1,33 @@
+{
+    "name": "wine_pl",
+    "task": "regression", 
+    "target_name": "price", 
+    "entity_name": "name",     
+    "repeated": false,
+    "dtype": {
+        "name": "object",
+        "price": "float64",
+        "country": "object",
+        "region": "object",
+        "winery": "object",
+        "variety": "object",
+        "alcohol": "float64",
+        "acidity": "float64",
+        "sugar": "float64",
+        "ph": "float64",
+        "sulphates": "float64",
+        "quality": "float64",
+        "rating": "float64",
+        "taste": "float64",
+        "color": "object",
+        "type": "object",
+        "vintage": "int64",
+        "harvest": "object",
+        "age": "int64",
+        "temperature": "float64",
+        "grape": "object",
+        "food": "object",
+        "description": "object",
+        "image": "object"
+    }
+}

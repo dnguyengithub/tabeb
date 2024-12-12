@@ -1,0 +1,7 @@
+{
+    "name": "wine_vivino_price",
+    "task": "regression", 
+    "target_name": "Price", 
+    "entity_name": "Name", 
+    "repeated": false
+}

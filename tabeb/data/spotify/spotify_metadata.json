@@ -1,0 +1,7 @@
+{
+    "name": "spotify",
+    "task": "classification", 
+    "target_name": "popularity", 
+    "entity_name": "track", 
+    "repeated": false
+}
