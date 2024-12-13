@@ -5,7 +5,7 @@
         <a href="#introduction">Introduction</a> |
         <a href="#quick-start">Quick start</a> |
         <a href="#how-to">How to</a> |
-        <a href="#release">Release</a> |
+        <a href="#release">Release</a> 
     <p>
 </h4>
 
