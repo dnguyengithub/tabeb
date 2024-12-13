@@ -214,3 +214,19 @@ Datasets to be integrated in the next versions:
 - **Random encoder**: generates a random embedding for each row. This encoder serves and a tool to test the functionality of the benchmark.
 - **Skrub encoder**: uses Skrub TableVectorizer to transform a dataframe to a numeric (vectorized) representation using classical encoding techniques such as one-hot encoding, datetime encoding, etc. For more details: [https://skrub-data.org/stable/reference/generated/skrub.TableVectorizer.html](https://skrub-data.org/stable/reference/generated/skrub.TableVectorizer.html).
 - **CARTE encoder**: we developed a graph-based encoder based on CARTE ([https://arxiv.org/abs/2402.16785](https://arxiv.org/abs/2402.16785)).
+
+
+# TODO (with priority)
+
+- [ ]  Get the datasets for the missing tasks (clustering, ranking, deduplication) (0)
+- [ ]  Self-supervised learning of foundation models for unsupervised tasks (1)
+- [ ]  Add log (1)
+- [ ]  Add revision for each encoder (1)
+- [ ]  Define the template for data_metadata (1)
+- [ ]  Create MODEL_REGISTRY, TASK_REGISTRY, DATA_REGISTRY (1) 
+- [ ]  Host dataset and pretrained models on the cloud (2)
+- [ ]  Refacto model_meta, task_meta, dataset_meta (2)
+- [ ]  Build a website for the benchmark, or push it to HuggingFace (2)
+- [ ]  Get multiple metrics for each task (3)
+- [ ]  Add image modality (3)
+- [ ]  Write tests (4)
