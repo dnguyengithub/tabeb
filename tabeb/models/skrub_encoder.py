@@ -22,4 +22,4 @@ class SkrubEncoder(TabEBBaseEncoder):
     def transform(self, X: np.ndarray) -> np.ndarray:
         """
         """
-        return self.table_vectorizer.transform(X)
+        return np.nan_to_num(self.table_vectorizer.transform(X), 0.0)
