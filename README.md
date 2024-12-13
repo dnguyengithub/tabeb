@@ -211,6 +211,6 @@ Datasets to be integrated in the next versions:
 
 ### Available encoders
 
-- Random encoder: generates a random embedding for each row. This encoder serves and a tool to test the functionality of the benchmark.
-- Skrub encoder: uses Skrub TableVectorizer to transform a dataframe to a numeric (vectorized) representation using classical encoding techniques such as one-hot encoding, datetime encoding, etc. For more details: [https://skrub-data.org/stable/reference/generated/skrub.TableVectorizer.html](https://skrub-data.org/stable/reference/generated/skrub.TableVectorizer.html).
-- CARTE encoder: we developed a graph-based encoder based on CARTE ([https://arxiv.org/abs/2402.16785](https://arxiv.org/abs/2402.16785)).
+- **Random encoder**: generates a random embedding for each row. This encoder serves and a tool to test the functionality of the benchmark.
+- **Skrub encoder**: uses Skrub TableVectorizer to transform a dataframe to a numeric (vectorized) representation using classical encoding techniques such as one-hot encoding, datetime encoding, etc. For more details: [https://skrub-data.org/stable/reference/generated/skrub.TableVectorizer.html](https://skrub-data.org/stable/reference/generated/skrub.TableVectorizer.html).
+- **CARTE encoder**: we developed a graph-based encoder based on CARTE ([https://arxiv.org/abs/2402.16785](https://arxiv.org/abs/2402.16785)).
