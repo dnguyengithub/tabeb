@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 import numpy as np
+import pandas as pd
 from collections.abc import Sequence
 from typing import Any, Protocol, Union, runtime_checkable
 from sklearn.base import BaseEstimator, TransformerMixin
@@ -66,3 +67,25 @@ class TabEBBaseEncoder(BaseEstimator, TransformerMixin):
         norms = np.linalg.norm(embedding, axis=1, keepdims=True)
         norms[norms == 0] = 1
         return embedding / norms
+    
+def get_leaderboard(tasks: [str], result_dir: str = '') -> str:
+    """_summary_
+
+    Args:
+        tasks (str, optional): _description_. Defaults to None.
+
+    Returns:
+        str: _description_
+    """
+    if len(tasks) == 0:
+        return "No tasks provided"
+    else:
+        task_name = tasks[0]
+        df_leaderboard = pd.read_parquet(os.path.join(result_dir, f"scores_{task_name}.parquet"))
+    
+    if len(tasks) > 1:
+        df_leaderboard = df_leaderboard[["encoder", f"{task_name}_average"]]
+        for task_name in tasks[1:]:
+            df_task_score = pd.read_parquet(os.path.join(result_dir, f"scores_{task_name}.parquet"))
+            df_leaderboard = df_leaderboard.merge(df_task_score[["encoder", f"{task_name}_average"]], on="encoder", how="outer")
+    return df_leaderboard
